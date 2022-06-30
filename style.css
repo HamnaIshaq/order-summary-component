@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%); 
+  --veryPaleBlue: hsl(225, 100%, 98%); 
+  --desaturatedBlue: hsl(224, 23%, 55%); 
+  --darkBlue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--paleBlue);
+  height: 100vh; 
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+}
+
+.body-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container {
+  text-align: center;
+  background-color: var(--white);
+  max-width: 330px;
+  border-radius: 20px;
+}
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.order-content-container {
+  padding: 35px 25px 22px 25px;
+}
+
+.order-h1 {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--darkBlue);
+}
+
+.order-h1-subsection,
+.order-price,
+.btn-order-cancel {
+  color: var(--desaturatedBlue);
+}
+ 
+.order-h1 {
+  margin-bottom: 20px;
+}
+
+.order-h1-subsection {
+  line-height: 1.75;
+}
+
+.order-price-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-price-container {
+  border-radius: 20px;
+  background-color: var(--veryPaleBlue);
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.order-figure {
+  margin-right: 15px;
+}
+
+.order-price-flex-wrapper {
+  display: flex;
+}
+
+.order-price-annual {
+  color: var(--darkBlue);
+  font-weight: bold;
+}
+
+.order-price-annual-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-price {
+  line-height: 2;
+  font-weight: normal;
+}
+
+.order-change {
+  display: block;
+  margin-left: 8px;
+  color: var(--brightBlue);
+  font-weight: bold;
+}
+
+/* On order-change i.e. anchor tag hover */
+.order-change:hover {
+  color: var(--desaturatedBlue);
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  background: lightblue;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-order-proceed {
+  background-color: var(--brightBlue);
+  color: var(--white);
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 9px;
+}
+
+/* On btn-order-proceed i.e. proceed to payment button hover */
+
+.btn-order-proceed:hover {
+  opacity: 0.6;
+}
+
+.btn-order-cancel {
+  background-color: transparent;
+  color: var(--desaturatedBlue);
+  font-weight: bold;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+
+/* On btn-order-cancel i.e. cancel order button hover */
+
+.btn-order-cancel:hover {
+  color: var(--darkBlue);
+}
+
+
+/* Desktop size */
+@media (min-width: 800px) {
+
+  .section-container {
+    max-width: 450px;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 415px;
+  }
+
+  .order-price-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
